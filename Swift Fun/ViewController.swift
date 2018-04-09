@@ -20,7 +20,6 @@ var buttonCount = 0
         
         buttonCount = buttonCount + 1
         
-        print (buttonCount)
         
         if buttonCount >= 15 {
             view.backgroundColor = UIColor.blue
