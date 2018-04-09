@@ -4,7 +4,6 @@
 //
 //  Created by Paulo Usabiaga on 4/4/18.
 //  Copyright © 2018 Paulo Usabiaga. All rights reserved.
-//  Warup world I love pizza 
 //
 
 
@@ -20,6 +19,7 @@ var buttonCount = 0
         
         buttonCount = buttonCount + 1
         
+        print (buttonCount)
         
         if buttonCount >= 15 {
             view.backgroundColor = UIColor.blue
