@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14105" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Swift_Fun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello Moto!!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42n-N8-V44">
-                                <rect key="frame" x="114" y="274.5" width="93" height="20.5"/>
+                                <rect key="frame" x="141" y="395.66666666666669" width="93" height="20.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -28,25 +28,55 @@
                                 <rect key="frame" x="41" y="297" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gOM-J4-7eG">
+                                <rect key="frame" x="137.66666666666666" y="309.33333333333331" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6UP-3C-BeX"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oze-Uz-5eB">
+                                <rect key="frame" x="137.66666666666666" y="357.33333333333331" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="8bh-iS-4Ao"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FG4-Se-2FY">
-                                <rect key="frame" x="93" y="305" width="134" height="30"/>
-                                <state key="normal" title="Hit me WANKER =0"/>
+                                <rect key="frame" x="122" y="424.66666666666669" width="131" height="30"/>
+                                <state key="normal" title="Lets due Math MFs"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aL5-wK-Tcj"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tcj-DP-Px9">
+                                <rect key="frame" x="163" y="262" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="FG4-Se-2FY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QPF-cl-ZAT"/>
-                            <constraint firstItem="FG4-Se-2FY" firstAttribute="top" secondItem="42n-N8-V44" secondAttribute="bottom" constant="10" id="U4T-0A-jxS"/>
+                            <constraint firstItem="gOM-J4-7eG" firstAttribute="top" secondItem="Tcj-DP-Px9" secondAttribute="bottom" constant="16.333333333333314" id="0MV-Dw-Nwc"/>
+                            <constraint firstItem="FG4-Se-2FY" firstAttribute="top" secondItem="42n-N8-V44" secondAttribute="bottom" constant="8.5" id="Axt-Lr-f56"/>
+                            <constraint firstItem="42n-N8-V44" firstAttribute="top" secondItem="oze-Uz-5eB" secondAttribute="bottom" constant="8.5" id="GyO-Ky-lpb"/>
+                            <constraint firstItem="FG4-Se-2FY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ie2-jC-vWC"/>
+                            <constraint firstItem="gOM-J4-7eG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h4k-sY-dve"/>
+                            <constraint firstItem="oze-Uz-5eB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m1b-LV-pTK"/>
+                            <constraint firstItem="oze-Uz-5eB" firstAttribute="top" secondItem="gOM-J4-7eG" secondAttribute="bottom" constant="18" id="mdl-wX-38a"/>
+                            <constraint firstItem="Tcj-DP-Px9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tlZ-sZ-qXT"/>
                             <constraint firstItem="42n-N8-V44" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yD4-JV-42P"/>
                             <constraint firstItem="42n-N8-V44" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yEa-gU-E3I"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="additionSwitch" destination="Tcj-DP-Px9" id="SS3-bN-XA1"/>
+                        <outlet property="bottomTextField" destination="oze-Uz-5eB" id="qav-jT-mzh"/>
                         <outlet property="myLabel" destination="42n-N8-V44" id="uOA-F3-NPC"/>
+                        <outlet property="topTextField" destination="gOM-J4-7eG" id="rlx-wX-bde"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
